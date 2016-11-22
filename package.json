@@ -1,0 +1,8 @@
+{
+  "name": "gulp-local-cache",
+  "description": "A gulp plugin that provides a persisted file cache",
+  "version": "0.0.1",
+  "author": "Chris Deacy <chris@deacy.io>",
+  "main": "lib/index.js",
+  "license": "MIT"
+}
