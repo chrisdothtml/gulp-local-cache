@@ -7,7 +7,7 @@ This plugin is similar to [gulp-cache](https://github.com/jgable/gulp-cache), bu
 ## Install
 
 ```bash
-$ npm install --save-dev gulp-local-cache
+npm install --save-dev gulp-local-cache
 ```
 
 ## Use
