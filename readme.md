@@ -19,9 +19,13 @@ const standard = require('gulp-standard')
 
 gulp.task('lint', () => {
   return gulp.src('src/*.js')
+    // cache files
     .pipe(cache())
     .pipe(standard())
 })
+
+// clear cache
+gulp.task('clear-cache', cache.clear)
 ```
 
 ## Note
