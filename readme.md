@@ -10,7 +10,7 @@ npm install --save-dev gulp-local-cache
 
 ## Use
 
-Every time `gulp lint` runs, the linter (in this case, gulp-standard) will only receive files that have changed since the last run.
+In this example, every time `gulp lint` runs, the linter (gulp-standard) will only receive files that have changed since the last run.
 
 ```javascript
 const cache = require('gulp-local-cache')
@@ -20,7 +20,7 @@ const standard = require('gulp-standard')
 gulp.task('lint', () => {
   return gulp.src('src/*.js')
     // cache files
-    .pipe(cache())
+    .pipe(cache.store())
     .pipe(standard())
 })
 
@@ -30,4 +30,4 @@ gulp.task('clear-cache', cache.clear)
 
 ## Note
 
-This plugin will create `.gulpcache` in your project root, so make sure to gitignore it if you don't want it committed
+This plugin will create `.gulpcache` in your project root to store the cache
