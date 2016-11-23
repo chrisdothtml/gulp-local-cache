@@ -14,5 +14,9 @@
   "author": "Chris Deacy <chris@deacy.io>",
   "repository": "https://github.com/chrisdothtml/gulp-local-cache",
   "bugs": "https://github.com/chrisdothtml/gulp-local-cache/issues",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "md5": "^2.2.1",
+    "through2": "^2.0.1"
+  }
 }
