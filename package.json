@@ -7,8 +7,11 @@
   },
   "description": "A gulp plugin that provides a persisted file cache",
   "keywords": [
-    "gulpplugin",
     "cache",
+    "file",
+    "gulp",
+    "gulpplugin",
+    "local",
     "persist"
   ],
   "author": "Chris Deacy <chris@deacy.io>",
