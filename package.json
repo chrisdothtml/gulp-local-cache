@@ -2,6 +2,9 @@
   "name": "gulp-local-cache",
   "version": "0.0.1",
   "main": "lib/index.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "description": "A gulp plugin that provides a persisted file cache",
   "keywords": [
     "gulpplugin",
