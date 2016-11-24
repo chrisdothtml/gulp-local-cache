@@ -19,7 +19,7 @@ const standard = require('gulp-standard')
 
 gulp.task('lint', () => {
   return gulp.src('src/*.js')
-    // cache files
+    // filter out cached files
     .pipe(cache.filter())
     .pipe(standard())
 })
@@ -37,7 +37,7 @@ cache.path('.cache/my-cache')
 
 gulp.task('assets', () => {
   return gulp.src(...)
-    // stored in .cache/my-cache
+    // cache stored in .cache/my-cache
     .pipe(cache.filter())
     ...
 })
