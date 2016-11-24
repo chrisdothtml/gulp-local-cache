@@ -23,11 +23,22 @@ gulp.task('lint', () => {
     .pipe(cache.store())
     .pipe(standard())
 })
-
-// clear cache
-gulp.task('clear-cache', cache.clear)
 ```
 
-## Note
+## Custom path
 
-This plugin will create `.gulpcache` in your project root to store the cache
+The default path for the cache file is `.gulpcache`, but it can be changed if needed.
+
+```javascript
+// get current
+cache.path()
+// set new
+cache.path('.cache/my-cache')
+
+gulp.task('assets', () => {
+  return gulp.src(...)
+    // stored in .cache/my-cache
+    .pipe(cache.store())
+    ...
+})
+```
