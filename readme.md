@@ -5,7 +5,9 @@
 ## Install
 
 ```bash
-npm install --save-dev gulp-local-cache
+yarn add -D gulp-local-cache
+# npm works too
+npm i -D gulp-local-cache
 ```
 
 ## Use
