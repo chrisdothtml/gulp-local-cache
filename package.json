@@ -18,8 +18,7 @@
     "persist"
   ],
   "author": "Chris Deacy <chris@deacy.io>",
-  "repository": "https://github.com/chrisdothtml/gulp-local-cache",
-  "bugs": "https://github.com/chrisdothtml/gulp-local-cache/issues",
+  "repository": "github:chrisdothtml/gulp-local-cache",
   "license": "MIT",
   "scripts": {
     "lint": "standard -v | snazzy"
