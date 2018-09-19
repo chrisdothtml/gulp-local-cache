@@ -1,5 +1,7 @@
 # gulp-local-cache
 
+[![StandardJS](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 > A gulp plugin that provides a persisted file cache
 
 ## Install
