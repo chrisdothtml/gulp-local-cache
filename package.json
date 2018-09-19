@@ -2,6 +2,9 @@
   "name": "gulp-local-cache",
   "version": "1.0.0",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "engines": {
     "node": ">=4.0.0"
   },
