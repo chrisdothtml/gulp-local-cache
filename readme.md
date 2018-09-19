@@ -46,3 +46,7 @@ gulp.task('assets', () => {
     ...
 })
 ```
+
+## License
+
+[MIT](LICENSE)
