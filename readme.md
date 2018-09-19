@@ -29,7 +29,7 @@ gulp.task('lint', () => {
 })
 ```
 
-## Custom path
+### Cache filepath
 
 The default path for the cache file is `.gulpcache`, but it can be changed if needed.
 
@@ -43,7 +43,18 @@ gulp.task('assets', () => {
   return gulp.src(...)
     // cache stored in .cache/my-cache
     .pipe(cache.filter())
-    ...
+})
+```
+
+### Cache key
+
+If you need to store multiple caches in the same file (e.g. caching the same file at multiple stages of the build), you can pass a key into `cache.filter`
+
+```javascript
+// ...
+gulp.task('assets', () => {
+  return gulp.src('*.js')
+    .pipe(cache.filter('assets'))
 })
 ```
 
