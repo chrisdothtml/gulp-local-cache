@@ -21,6 +21,7 @@
   "repository": "github:chrisdothtml/gulp-local-cache",
   "license": "MIT",
   "scripts": {
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "standard -v | snazzy",
     "test": "ava",
     "test+coverage": "nyc ava"
@@ -38,6 +39,7 @@
   },
   "devDependencies": {
     "ava": "^0.25.0",
+    "coveralls": "^3.0.2",
     "esm": "^3.0.84",
     "fs-extra": "^7.0.0",
     "gulp": "^3.9.1",

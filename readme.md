@@ -1,6 +1,9 @@
 # gulp-local-cache
 
 [![StandardJS](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![travis-ci build status](https://api.travis-ci.org/chrisdothtml/gulp-local-cache.svg?branch=master)](https://travis-ci.org/chrisdothtml/gulp-local-cache/branches)
+[![appveyor build status](https://ci.appveyor.com/api/projects/status/ghpfl69u4rtks0m2/branch/master?svg=true)](https://ci.appveyor.com/project/chrisdothtml/gulp-local-cache)
+[![Coverage status](https://coveralls.io/repos/github/chrisdothtml/gulp-local-cache/badge.svg)](https://coveralls.io/github/chrisdothtml/gulp-local-cache)
 
 > A gulp plugin that provides a persisted file cache
 
