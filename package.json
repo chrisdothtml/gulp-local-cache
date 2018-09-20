@@ -21,13 +21,27 @@
   "repository": "github:chrisdothtml/gulp-local-cache",
   "license": "MIT",
   "scripts": {
-    "lint": "standard -v | snazzy"
+    "lint": "standard -v | snazzy",
+    "test": "ava",
+    "test+coverage": "nyc ava"
+  },
+  "ava": {
+    "files": [
+      "test/*.js"
+    ],
+    "require": "esm",
+    "verbose": true
   },
   "dependencies": {
     "mkdirp": "^0.5.1",
     "through2": "^2.0.1"
   },
   "devDependencies": {
+    "ava": "^0.25.0",
+    "esm": "^3.0.84",
+    "fs-extra": "^7.0.0",
+    "gulp": "^3.9.1",
+    "nyc": "^13.0.1",
     "snazzy": "^8.0.0",
     "standard": "^12.0.1"
   },
