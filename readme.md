@@ -59,6 +59,13 @@ gulp.task('assets', () => {
 })
 ```
 
+### Clear cache
+
+```javascript
+// ...
+cache.clear()
+```
+
 ## License
 
 [MIT](LICENSE)
