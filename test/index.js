@@ -23,7 +23,7 @@ async function useFixture () {
 async function renameFixture (fixture) {
   const newPath = path.join(TMP_PATH, `fixture-${Date.now()}-${fixture.token}`)
 
-  await fse.move(fixture.path, newPath)
+  await fse.copy(fixture.path, newPath)
   return {
     path: newPath,
     token: fixture.token
@@ -41,7 +41,7 @@ function getFilteredFiles (fixture) {
     const result = []
 
     stream.on('error', reject)
-    stream.on('end', () => resolve(result))
+    stream.on('finish', () => resolve(result))
     stream.on('data', file => {
       result.push(
         path.relative(fixture.path, file.path)
