@@ -3,8 +3,8 @@ os:
   - linux
   - osx
 node_js:
-  - lts/*
-  - node
+  - 8
+  - 11
 script: yarn test+coverage
 after_success:
   - yarn coveralls
