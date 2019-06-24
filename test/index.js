@@ -41,7 +41,7 @@ function getFilteredFiles (fixture) {
     const result = []
 
     stream.on('error', reject)
-    stream.on('close', () => resolve(result))
+    stream.on('finish', () => resolve(result))
     stream.on('data', file => {
       result.push(
         path.relative(fixture.path, file.path)
